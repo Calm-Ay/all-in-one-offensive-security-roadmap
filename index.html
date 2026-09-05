@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offensive AI + Cloud Red Teaming Roadmap 2026 | Calm Ay</title>
+  <meta name="description" content="A specialization roadmap for penetration testers layering Offensive AI/LLM Red Teaming and Offensive Cloud Pentesting on an existing offensive foundation. Free + paid resources, key concepts, labs, a 12-week action plan, portfolio builders, and certifications worth your time."/>
+  <meta property="og:title" content="Offensive AI + Cloud Red Teaming Roadmap 2026 | Calm Ay"/>
+  <meta property="og:description" content="Master Offensive AI/LLM Red Teaming + Offensive Cloud Pentesting and become a high-value hybrid Red Teamer in 2026. Step-by-step path, labs, projects, and certs that matter."/>
+  <meta property="og:url" content="https://calm-ay.github.io/offensive-ai-cloud-roadmap/"/>
+  <meta property="og:image" content="https://calm-ay.github.io/photo.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23e62020' d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/></svg>"/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    :root{--red:#e62020;--white:#ffffff;--black:#000000;--card:#0d0d0d;--gray:#777;--border:#1c1c1c;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--black);color:var(--white);font-family:'Space Grotesk',sans-serif;overflow-x:hidden;}
+    ::-webkit-scrollbar{width:3px;}
+    ::-webkit-scrollbar-track{background:#000;}
+    ::-webkit-scrollbar-thumb{background:var(--red);}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 50px;background:rgba(0,0,0,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+    .nav-logo{display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;letter-spacing:3px;color:var(--white);text-decoration:none;}
+    .nav-logo .bolt{color:var(--red);}
+    .nav-back{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:700;transition:color 0.2s;}
+    .nav-back:hover{color:var(--white);}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 60px;}
+    .label{display:flex;align-items:center;gap:12px;font-size:0.68rem;letter-spacing:3px;color:var(--red);text-transform:uppercase;font-weight:700;margin-bottom:28px;}
+    .label::before{content:'';display:block;width:28px;height:2px;background:var(--red);}
+    .heading{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.6rem,6vw,5.4rem);line-height:0.92;text-transform:uppercase;}
+    .heading .w{color:var(--white);display:block;}
+    .heading .r{color:var(--red);display:block;}
+    .hero{min-height:100vh;display:flex;align-items:center;padding-top:80px;}
+    .hero-divider{width:50px;height:3px;background:var(--red);margin:22px 0;}
+    .hero-sub{color:var(--gray);font-size:0.92rem;line-height:1.75;max-width:600px;margin-top:8px;}
+    .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+    .tag{font-size:0.58rem;letter-spacing:1.5px;text-transform:uppercase;border:1px solid #2a2a2a;color:var(--gray);padding:3px 10px;border-radius:2px;font-weight:600;}
+    .btn-r{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;padding:13px 30px;border-radius:3px;font-weight:700;font-size:0.8rem;letter-spacing:2px;text-decoration:none;transition:opacity 0.2s;margin-top:28px;}
+    .btn-r:hover{opacity:0.82;}
+    .section{padding:80px 0;}
+    .phase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:36px;}
+    .phase-card{background:#080808;border:1px solid var(--border);border-left:3px solid var(--red);border-radius:3px;padding:24px;}
+    .phase-k{font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:8px;}
+    .phase-t{font-weight:700;font-size:1rem;margin-bottom:6px;}
+    .phase-d{font-size:0.78rem;color:var(--gray);line-height:1.6;}
+    .area-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:36px;}
+    .area-card{background:#080808;border:1px solid var(--border);border-radius:3px;padding:24px;}
+    .area-label{font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:12px;}
+    .area-list{list-style:none;}
+    .area-list li{font-size:0.78rem;color:var(--gray);line-height:1.55;padding-left:16px;position:relative;margin-bottom:8px;}
+    .area-list li::before{content:'▸';position:absolute;left:0;color:var(--red);}
+    .area-list li strong{color:#bbb;font-weight:600;}
+    .plan-table{margin-top:36px;border:1px solid var(--border);border-radius:3px;overflow:hidden;}
+    .plan-head{display:grid;grid-template-columns:0.5fr 1fr 2fr;background:#111;padding:14px 20px;font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);font-weight:700;}
+    .plan-row{display:grid;grid-template-columns:0.5fr 1fr 2fr;padding:16px 20px;border-top:1px solid var(--border);background:#080808;align-items:start;gap:10px;}
+    .plan-row .pw{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;color:var(--red);}
+    .plan-row .pf{font-size:0.82rem;font-weight:600;}
+    .plan-row .pa{font-size:0.75rem;color:var(--gray);line-height:1.5;}
+    .doc-row{background:#080808;border:1px solid var(--border);border-radius:3px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:36px;}
+    .doc-row:hover{border-color:#2a2a2a;}
+    .doc-title{font-weight:700;font-size:0.95rem;margin-bottom:5px;}
+    .doc-desc{font-size:0.78rem;color:var(--gray);line-height:1.6;max-width:560px;}
+    .doc-dl{display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;padding:10px 20px;border-radius:3px;font-weight:700;font-size:0.72rem;letter-spacing:2px;text-decoration:none;transition:opacity 0.2s;white-space:nowrap;flex-shrink:0;}
+    .doc-dl:hover{opacity:0.82;}
+    .footer{padding:60px 0 40px;border-top:1px solid var(--border);}
+    .footer-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,9vw,8rem);text-transform:uppercase;color:transparent;-webkit-text-stroke:1px #2a0000;margin-top:40px;line-height:1;user-select:none;overflow:hidden;}
+    .footer-copy{font-size:0.72rem;color:#333;margin-top:16px;padding-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+    @media(max-width:768px){
+      nav{padding:12px 24px;flex-wrap:wrap;gap:8px;}
+      .wrap{padding:0 24px;}
+      .hero{padding-top:100px;}
+      .phase-grid{grid-template-columns:1fr;}
+      .area-grid{grid-template-columns:1fr;}
+      .plan-head{display:none;}
+      .plan-row{grid-template-columns:1fr;gap:6px;}
+      .doc-row{flex-direction:column;align-items:flex-start;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="https://calm-ay.github.io"><span class="bolt">⚡</span> CALM-AY</a>
+  <a class="nav-back" href="https://calm-ay.github.io">← Back to Portfolio</a>
+</nav>
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <div class="label">SPECIALIZATION ROADMAP · 2026</div>
+      <div class="heading">
+        <span class="w">Offensive AI + Cloud</span>
+        <span class="r">Red Teaming Roadmap</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="tag-row">
+        <span class="tag">AI / LLM RED TEAMING</span>
+        <span class="tag">CLOUD PENTESTING</span>
+        <span class="tag">PROMPT INJECTION</span>
+        <span class="tag">IAM ABUSE</span>
+        <span class="tag">CI/CD ATTACKS</span>
+        <span class="tag">12-WEEK PLAN</span>
+      </div>
+      <p class="hero-sub">The ultimate specialization path for penetration testers. This roadmap layers two high-demand specializations on top of a strong offensive foundation — <strong style="color:#bbb">Offensive AI/LLM Red Teaming</strong> (the fastest path to differentiation) and <strong style="color:#bbb">Offensive Cloud Pentesting</strong> (for volume and modern relevance). The real power is in the combination: in 3–4 months you can confidently red team modern AI systems running in cloud environments — a rare and extremely valuable skill set in 2026. No fluff. Best of the best. Offensive focused. Red Teaming mindset.</p>
+      <a href="#phases" class="btn-r">VIEW THE ROADMAP ↓</a>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="phases" class="section">
+    <div class="label">THE BIG PICTURE</div>
+    <div class="phase-grid">
+      <div class="phase-card"><div class="phase-k">Phase 0 — Foundation · 1 week</div><div class="phase-t">Current Skills + Basic AI/Cloud Concepts</div><div class="phase-d">Web/API, exploits, malware dev, endpoint security and reverse engineering, plus basic AI knowledge as the launch pad.</div></div>
+      <div class="phase-card"><div class="phase-k">Phase 1 — AI/LLM Offensive · 4–5 weeks</div><div class="phase-t">Prompt Injection → Agent Attacks → Advanced</div><div class="phase-d">Highest-leverage specialization right now: AI adoption is exploding but very few people can actually attack these systems effectively.</div></div>
+      <div class="phase-card"><div class="phase-k">Phase 2 — Cloud Offensive · 4–5 weeks</div><div class="phase-t">IAM → Misconfigs → K8s/Serverless → CI/CD</div><div class="phase-d">Cloud is the new attack surface. Most companies are moving to cloud but very few pentesters know how to properly attack them.</div></div>
+      <div class="phase-card"><div class="phase-k">Phase 3 — Integration · Ongoing</div><div class="phase-t">Attack Cloud-Hosted AI Systems</div><div class="phase-d">The power move: chain cloud IAM compromise → access to LLM endpoints → prompt injection / model extraction. Rare and valuable.</div></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="section" style="padding-top:0;">
+    <div class="label">MUST-MASTER CONCEPTS</div>
+    <div class="area-grid">
+      <div class="area-card">
+        <div class="area-label">Phase 1 — AI / LLM Red Teaming</div>
+        <ul class="area-list">
+          <li><strong>Prompt Injection</strong> (direct + indirect) & jailbreaking</li>
+          <li><strong>RAG poisoning</strong> & data poisoning</li>
+          <li><strong>Model extraction</strong> & membership inference</li>
+          <li><strong>Agent / tool abuse</strong> & supply chain attacks on AI pipelines</li>
+          <li>Guardrail bypass & multi-turn / conversational attacks</li>
+          <li>Adversarial examples for LLMs & vision models</li>
+        </ul>
+      </div>
+      <div class="area-card">
+        <div class="area-label">Phase 2 — Cloud Attack Surfaces</div>
+        <ul class="area-list">
+          <li><strong>IAM</strong> — privilege escalation via roles, policies, trust relationships</li>
+          <li><strong>Misconfigurations</strong> — S3 buckets, security groups, metadata service abuse</li>
+          <li><strong>Container & Kubernetes</strong> — container escapes, RBAC, pod security</li>
+          <li><strong>Serverless</strong> — event injection, permission boundaries, supply chain</li>
+          <li><strong>CI/CD pipelines</strong> — pipeline compromise, secret exfiltration, poisoned builds</li>
+          <li>Storage & data services — S3/Blob attacks + snapshot abuse</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="section" style="padding-top:0;">
+    <div class="label">12-WEEK ACTION PLAN</div>
+    <div class="plan-table">
+      <div class="plan-head"><div>Week</div><div>Focus</div><div>Key Activities</div></div>
+      <div class="plan-row"><div class="pw">1–2</div><div class="pf">AI Foundations</div><div class="pa">OWASP LLM Top 10 + Microsoft AI Red Teaming 101 series + Lakera Gandalf.</div></div>
+      <div class="plan-row"><div class="pw">3–4</div><div class="pf">AI Offensive Core</div><div class="pa">Start OffSec LLM Path or COASP. Daily tool practice (Garak, Promptfoo). Break 5+ LLMs.</div></div>
+      <div class="plan-row"><div class="pw">5–6</div><div class="pf">Cloud Foundations</div><div class="pa">CloudGoat + FLAWS labs. IAM deep dive. PwnedLabs scenarios. Day Cyberwox videos.</div></div>
+      <div class="plan-row"><div class="pw">7–8</div><div class="pf">Cloud Offensive</div><div class="pa">SANS SEC588 or OffSec Cloud Path. K8s + serverless attacks. CI/CD focus.</div></div>
+      <div class="plan-row"><div class="pw">9–10</div><div class="pf">Integration</div><div class="pa">Deploy LLM on cloud. Full-stack attacks. Chain IAM → LLM access → prompt injection.</div></div>
+      <div class="plan-row"><div class="pw">11–12</div><div class="pf">Portfolio + Polish</div><div class="pa">Document 4–5 full attack chains. Write reports. Update LinkedIn. Apply to roles.</div></div>
+    </div>
+    <p style="font-size:0.8rem;color:var(--gray);line-height:1.7;margin-top:22px;"><strong style="color:#bbb">Daily habit:</strong> 1–2 hours minimum. Watch video → immediate lab practice. Never watch more than 30–40 min without breaking something.</p>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="section" style="padding-top:0;">
+    <div class="label">FULL ROADMAP</div>
+    <div class="doc-row">
+      <div>
+        <div class="doc-title">Offensive AI + Cloud Red Teaming Roadmap 2026</div>
+        <div class="doc-desc">The complete guide — the big picture, Phase 1 (AI/LLM red teaming) and Phase 2 (offensive cloud) with free + paid resources, tools, and YouTube channels, Phase 3 integration attack chains, the full 12-week action plan, project & portfolio builders, and certifications worth your time.</div>
+      </div>
+      <a href="./Offensive_AI_Cloud_RedTeaming_Roadmap_2026.pdf" class="doc-dl" download>DOWNLOAD ROADMAP ↓</a>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <footer class="footer">
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <a href="https://calm-ay.github.io" style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:700;">← Portfolio</a>
+      <a href="https://github.com/Calm-Ay" style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:700;">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/rasaq-ayomide-sec" style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);text-decoration:none;font-weight:700;">LinkedIn ↗</a>
+    </div>
+    <div class="footer-name">CALM AY</div>
+    <div class="footer-copy">
+      <span>Rasaq Ayomide · Offensive Security Engineer · AI Red Teaming · Cloud Security</span>
+      <span>calm-ay.github.io</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
