@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Offensive AI + Cloud Red Teaming Roadmap 2026 | Calm Ay</title>
-  <meta name="description" content="A specialization roadmap for penetration testers layering Offensive AI/LLM Red Teaming and Offensive Cloud Pentesting on an existing offensive foundation. Free + paid resources, key concepts, labs, a 12-week action plan, portfolio builders, and certifications worth your time."/>
-  <meta property="og:title" content="Offensive AI + Cloud Red Teaming Roadmap 2026 | Calm Ay"/>
-  <meta property="og:description" content="Master Offensive AI/LLM Red Teaming + Offensive Cloud Pentesting and become a high-value hybrid Red Teamer in 2026. Step-by-step path, labs, projects, and certs that matter."/>
+  <title>All-in-One Offensive Security Roadmap | Calm Ay</title>
+  <meta name="description" content="An all-in-one offensive security roadmap — a curated, free-and-legal field manual of 310+ resources across 22 sections (web, API, Active Directory, cloud, binary/RE, malware, mobile, wireless, IoT), plus a Master Roadmap and the Offensive AI + Cloud Red Teaming Roadmap 2026. Zero to dangerous, free-first."/>
+  <meta property="og:title" content="All-in-One Offensive Security Roadmap | Calm Ay"/>
+  <meta property="og:description" content="Zero to dangerous, free-first. 310+ hand-picked resources across 22 offensive-security sections, plus a deep Master Roadmap and the AI + Cloud Red Teaming Roadmap 2026. Pay for nothing but the exam."/>
   <meta property="og:url" content="https://calm-ay.github.io/offensive-ai-cloud-roadmap/"/>
   <meta property="og:image" content="https://calm-ay.github.io/photo.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
@@ -112,7 +112,7 @@
     <div class="doc-row">
       <div>
         <div class="doc-title">All-in-One Offensive Security Path</div>
-        <div class="doc-desc">Zero to dangerous. A single free-first path through the whole offensive stack — Linux, networking, web/API, Active Directory, privilege escalation, and more — with 310+ free resources so anyone can start with no budget.</div>
+        <div class="doc-desc">The manual detailed on this page — zero to dangerous, free-first. Every platform, lab, cert, tool, repo, blog, channel and book across 22 sections, each with a link, what it is, and what it's best for. 310+ resources so anyone can start with no budget.</div>
       </div>
       <a href="./Calm_Ay_Offensive_Security_Path.pdf" class="doc-dl" download>DOWNLOAD ↓</a>
     </div>
@@ -126,7 +126,7 @@
     <div class="doc-row">
       <div>
         <div class="doc-title">Offensive AI + Cloud Red Teaming Roadmap 2026</div>
-        <div class="doc-desc">The specialization, detailed in full below — AI/LLM red teaming + offensive cloud, a 12-week action plan, labs, portfolio builders, and the certs worth your time. Read the breakdown on this page or grab the PDF.</div>
+        <div class="doc-desc">The specialization track — AI/LLM red teaming + offensive cloud, a 12-week action plan, labs, portfolio builders, and the certs worth your time. Branch here once the foundations are solid.</div>
       </div>
       <a href="./Offensive_AI_Cloud_RedTeaming_Roadmap_2026.pdf" class="doc-dl" download>DOWNLOAD ↓</a>
     </div>
@@ -135,40 +135,59 @@
 
 <div class="wrap">
   <section id="phases" class="section">
-    <div class="label">THE BIG PICTURE</div>
+    <div class="label">HOW TO USE THIS MANUAL</div>
     <div class="phase-grid">
-      <div class="phase-card"><div class="phase-k">Phase 0 — Foundation · 1 week</div><div class="phase-t">Current Skills + Basic AI/Cloud Concepts</div><div class="phase-d">Web/API, exploits, malware dev, endpoint security and reverse engineering, plus basic AI knowledge as the launch pad.</div></div>
-      <div class="phase-card"><div class="phase-k">Phase 1 — AI/LLM Offensive · 4–5 weeks</div><div class="phase-t">Prompt Injection → Agent Attacks → Advanced</div><div class="phase-d">Highest-leverage specialization right now: AI adoption is exploding but very few people can actually attack these systems effectively.</div></div>
-      <div class="phase-card"><div class="phase-k">Phase 2 — Cloud Offensive · 4–5 weeks</div><div class="phase-t">IAM → Misconfigs → K8s/Serverless → CI/CD</div><div class="phase-d">Cloud is the new attack surface. Most companies are moving to cloud but very few pentesters know how to properly attack them.</div></div>
-      <div class="phase-card"><div class="phase-k">Phase 3 — Integration · Ongoing</div><div class="phase-t">Attack Cloud-Hosted AI Systems</div><div class="phase-d">The power move: chain cloud IAM compromise → access to LLM endpoints → prompt injection / model extraction. Rare and valuable.</div></div>
+      <div class="phase-card"><div class="phase-k">Principle 01</div><div class="phase-t">Pick a lane, not everything</div><div class="phase-d">Foundations → Web → Active Directory is the highest-ROI beginner path. This is a map, not a novel — jump to a lane and build the skill with your hands. Don't read it front to back.</div></div>
+      <div class="phase-card"><div class="phase-k">Principle 02</div><div class="phase-t">Free-first</div><div class="phase-d">Every entry has a free, legal way in. Official cert pages are listed so you know the target you're working toward — not because you must pay to learn. Pay for nothing but the exam.</div></div>
+      <div class="phase-card"><div class="phase-k">Principle 03</div><div class="phase-t">Learn by doing</div><div class="phase-d">For every concept, find the matching free lab (HTB / THM / PortSwigger) and the matching write-up (IppSec / 0xdf). Watch, then do it yourself with no hints.</div></div>
+      <div class="phase-card"><div class="phase-k">Principle 04</div><div class="phase-t">Certs = exam + paper, not secret knowledge</div><div class="phase-d">Almost everything taught in expensive courses is re-taught, free, by the community. Keep your own methodology repo — the notes you write beat any course PDF. Pay for a cert when you need the credential.</div></div>
     </div>
+    <p style="font-size:0.8rem;color:var(--gray);line-height:1.7;margin-top:22px;"><strong style="color:#bbb">Rules of engagement:</strong> everything here is a legitimate, publicly-available learning resource — official sites, open-source repos, free labs, and creators' own published work. Only ever test systems you own or are explicitly authorized to test. Use isolated VMs for malware. The goal is to become the professional who gets <em>hired</em> to break in.</p>
   </section>
 </div>
 
 <div class="wrap">
   <section class="section" style="padding-top:0;">
-    <div class="label">MUST-MASTER CONCEPTS</div>
+    <div class="label">22 SECTIONS · 310+ RESOURCES</div>
     <div class="area-grid">
       <div class="area-card">
-        <div class="area-label">Phase 1 — AI / LLM Red Teaming</div>
+        <div class="area-label">Learn &amp; Certify</div>
         <ul class="area-list">
-          <li><strong>Prompt Injection</strong> (direct + indirect) & jailbreaking</li>
-          <li><strong>RAG poisoning</strong> & data poisoning</li>
-          <li><strong>Model extraction</strong> & membership inference</li>
-          <li><strong>Agent / tool abuse</strong> & supply chain attacks on AI pipelines</li>
-          <li>Guardrail bypass & multi-turn / conversational attacks</li>
-          <li>Adversarial examples for LLMs & vision models</li>
+          <li><strong>Training Companies &amp; Academies</strong> — where structured learning lives</li>
+          <li><strong>Certifications</strong> — the targets worth working toward</li>
+          <li><strong>Lab Platforms</strong> — HTB, THM, PortSwigger and more</li>
+          <li><strong>Career &amp; Learning Roadmap</strong> — how the lanes connect</li>
+          <li>Books &amp; Research Blogs — the deep references</li>
+          <li>YouTube Channels &amp; Free Conference Talks</li>
         </ul>
       </div>
       <div class="area-card">
-        <div class="area-label">Phase 2 — Cloud Attack Surfaces</div>
+        <div class="area-label">Attack Surfaces</div>
         <ul class="area-list">
-          <li><strong>IAM</strong> — privilege escalation via roles, policies, trust relationships</li>
-          <li><strong>Misconfigurations</strong> — S3 buckets, security groups, metadata service abuse</li>
-          <li><strong>Container & Kubernetes</strong> — container escapes, RBAC, pod security</li>
-          <li><strong>Serverless</strong> — event injection, permission boundaries, supply chain</li>
-          <li><strong>CI/CD pipelines</strong> — pipeline compromise, secret exfiltration, poisoned builds</li>
-          <li>Storage & data services — S3/Blob attacks + snapshot abuse</li>
+          <li><strong>Web Security</strong> &amp; <strong>API Security</strong> — start here for web</li>
+          <li><strong>Active Directory</strong> — the highest-ROI internal lane</li>
+          <li><strong>Mobile</strong>, <strong>Wireless</strong> &amp; <strong>IoT</strong> security</li>
+          <li><strong>Cloud Offensive Security</strong> — the modern surface</li>
+          <li><strong>Binary Exploitation (Pwn)</strong> &amp; <strong>Reverse Engineering</strong></li>
+          <li><strong>Malware Analysis</strong> — in isolated VMs only</li>
+        </ul>
+      </div>
+      <div class="area-card">
+        <div class="area-label">Practice Grounds</div>
+        <ul class="area-list">
+          <li><strong>Vulnerable Machines</strong> — retired boxes + free tiers</li>
+          <li><strong>Active Directory Labs</strong> — full domain practice</li>
+          <li><strong>Web Security Labs</strong> — PortSwigger, and beyond</li>
+          <li><strong>Bug Bounty Platforms</strong> — real targets, legally</li>
+        </ul>
+      </div>
+      <div class="area-card">
+        <div class="area-label">The Arsenal</div>
+        <ul class="area-list">
+          <li><strong>Essential GitHub Repositories</strong> — the repos that matter</li>
+          <li><strong>Command &amp; Control (C2) Frameworks</strong></li>
+          <li><strong>The Tool Arsenal</strong> — recon → root → report</li>
+          <li>Each entry: a link, what it is, and what it's best for</li>
         </ul>
       </div>
     </div>
@@ -177,30 +196,16 @@
 
 <div class="wrap">
   <section class="section" style="padding-top:0;">
-    <div class="label">12-WEEK ACTION PLAN</div>
+    <div class="label">THE HIGHEST-ROI STARTER PATH</div>
     <div class="plan-table">
-      <div class="plan-head"><div>Week</div><div>Focus</div><div>Key Activities</div></div>
-      <div class="plan-row"><div class="pw">1–2</div><div class="pf">AI Foundations</div><div class="pa">OWASP LLM Top 10 + Microsoft AI Red Teaming 101 series + Lakera Gandalf.</div></div>
-      <div class="plan-row"><div class="pw">3–4</div><div class="pf">AI Offensive Core</div><div class="pa">Start OffSec LLM Path or COASP. Daily tool practice (Garak, Promptfoo). Break 5+ LLMs.</div></div>
-      <div class="plan-row"><div class="pw">5–6</div><div class="pf">Cloud Foundations</div><div class="pa">CloudGoat + FLAWS labs. IAM deep dive. PwnedLabs scenarios. Day Cyberwox videos.</div></div>
-      <div class="plan-row"><div class="pw">7–8</div><div class="pf">Cloud Offensive</div><div class="pa">SANS SEC588 or OffSec Cloud Path. K8s + serverless attacks. CI/CD focus.</div></div>
-      <div class="plan-row"><div class="pw">9–10</div><div class="pf">Integration</div><div class="pa">Deploy LLM on cloud. Full-stack attacks. Chain IAM → LLM access → prompt injection.</div></div>
-      <div class="plan-row"><div class="pw">11–12</div><div class="pf">Portfolio + Polish</div><div class="pa">Document 4–5 full attack chains. Write reports. Update LinkedIn. Apply to roles.</div></div>
+      <div class="plan-head"><div>Step</div><div>Lane</div><div>What to do</div></div>
+      <div class="plan-row"><div class="pw">01</div><div class="pf">Foundations</div><div class="pa">Linux, networking, and scripting until they're second nature. HTB Academy Tier 0 + TryHackMe intro paths — all free.</div></div>
+      <div class="plan-row"><div class="pw">02</div><div class="pf">Web Security</div><div class="pa">PortSwigger Web Security Academy end to end — the best free web-hacking course on the internet, from the makers of Burp.</div></div>
+      <div class="plan-row"><div class="pw">03</div><div class="pf">Active Directory</div><div class="pa">The highest-value internal lane. Free AD labs + Nikhil Mittal / RastaMouse tradecraft blogs. Aim at CRTP/CRTO as the target.</div></div>
+      <div class="plan-row"><div class="pw">04</div><div class="pf">Pick a specialism</div><div class="pa">Branch into cloud, mobile, binary/RE, or AI red teaming (see the Master and AI+Cloud roadmaps in the library above).</div></div>
+      <div class="plan-row"><div class="pw">05</div><div class="pf">Build in public</div><div class="pa">Document every box and finding. A methodology repo + write-ups is the portfolio that gets you hired.</div></div>
     </div>
-    <p style="font-size:0.8rem;color:var(--gray);line-height:1.7;margin-top:22px;"><strong style="color:#bbb">Daily habit:</strong> 1–2 hours minimum. Watch video → immediate lab practice. Never watch more than 30–40 min without breaking something.</p>
-  </section>
-</div>
-
-<div class="wrap">
-  <section class="section" style="padding-top:0;">
-    <div class="label">FULL ROADMAP</div>
-    <div class="doc-row">
-      <div>
-        <div class="doc-title">Offensive AI + Cloud Red Teaming Roadmap 2026</div>
-        <div class="doc-desc">The complete guide — the big picture, Phase 1 (AI/LLM red teaming) and Phase 2 (offensive cloud) with free + paid resources, tools, and YouTube channels, Phase 3 integration attack chains, the full 12-week action plan, project & portfolio builders, and certifications worth your time.</div>
-      </div>
-      <a href="./Offensive_AI_Cloud_RedTeaming_Roadmap_2026.pdf" class="doc-dl" download>DOWNLOAD ROADMAP ↓</a>
-    </div>
+    <p style="font-size:0.8rem;color:var(--gray);line-height:1.7;margin-top:22px;"><strong style="color:#bbb">The core truth:</strong> almost everything taught in expensive courses is re-taught, free, by the community. The full manual lists all 22 sections with 310+ hand-picked links — grab it from the library above.</p>
   </section>
 </div>
 
@@ -213,7 +218,7 @@
     </div>
     <div class="footer-name">CALM AY</div>
     <div class="footer-copy">
-      <span>Rasaq Ayomide · Offensive Security Engineer · AI Red Teaming · Cloud Security</span>
+      <span>Rasaq Ayomide · Offensive Security Engineer · Free &amp; legal resources only · recon → root → report</span>
       <span>calm-ay.github.io</span>
     </div>
   </footer>
